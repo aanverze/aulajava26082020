@@ -9,6 +9,7 @@ public class Aritmetica {
 		int divisao; //divisão dos dois números
 		int multiplicacao; //multiplicação dos dois números
 		
+		
 		// Pedir para o usuário 2 números
 		//Cria um objeto de Scanner que lê da entrada padrão (System.in);
 		Scanner entrada = new Scanner(System.in);
@@ -19,6 +20,8 @@ public class Aritmetica {
 		n2 = entrada.nextInt();
 		
 		entrada.close();
+		
+		
 		
 		//Somar os dois números
 		soma = n1 + n2;
@@ -45,5 +48,15 @@ public class Aritmetica {
 		//Imprimir a multiplicação
 		System.out.printf("Multiplicar:  %d\n", multiplicacao);
 		
+		
+		if (n1==n2){
+			System.out.printf("Os numeros sao iguais!");
+		
+		} else if (n1>n2) {
+			System.out.printf("O maior eh: %d\n",n1);
+		
+		} else {
+			System.out.printf("O maior eh: %d\n",n2);
+		}
 	}
 }
